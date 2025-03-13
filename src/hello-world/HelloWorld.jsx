@@ -1,7 +1,10 @@
 export default function HelloWorld() {
+	const props = {
+		text: "Hello World from spread syntax",
+	};
 	return (
 		<div>
-			<HeaderHelloWorld text="Hello Wolrd" />
+			<HeaderHelloWorld {...props} />
 			<ParagraphHelloWorld />
 		</div>
 	);
