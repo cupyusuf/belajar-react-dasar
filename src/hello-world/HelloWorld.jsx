@@ -1,14 +1,13 @@
 export default function HelloWorld() {
 	return (
 		<div>
-			<HeaderHelloWorld />
+			<HeaderHelloWorld text="Hello Wolrd" />
 			<ParagraphHelloWorld />
 		</div>
 	);
 }
 
-function HeaderHelloWorld() {
-	const text = "Hello World";
+function HeaderHelloWorld({ text = "Ups, lupa kasih teks" }) {
 	return (
 		<h1
 			style={{
